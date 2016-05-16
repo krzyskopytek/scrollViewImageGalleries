@@ -18,6 +18,7 @@
 		4025CB551CEA317C008392B3 /* puppy3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4025CB521CEA317C008392B3 /* puppy3.jpg */; };
 		4025CB561CEA317C008392B3 /* puppy2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4025CB531CEA317C008392B3 /* puppy2.jpg */; };
 		4025CB571CEA317C008392B3 /* puppy1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4025CB541CEA317C008392B3 /* puppy1.jpg */; };
+		4025CB5A1CEA3D2B008392B3 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4025CB591CEA3D2B008392B3 /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		4025CB521CEA317C008392B3 /* puppy3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppy3.jpg; sourceTree = "<group>"; };
 		4025CB531CEA317C008392B3 /* puppy2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppy2.jpg; sourceTree = "<group>"; };
 		4025CB541CEA317C008392B3 /* puppy1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppy1.jpg; sourceTree = "<group>"; };
+		4025CB581CEA3D2B008392B3 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		4025CB591CEA3D2B008392B3 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				4025CB231CEA2CC7008392B3 /* AppDelegate.m */,
 				4025CB251CEA2CC7008392B3 /* ViewController.h */,
 				4025CB261CEA2CC7008392B3 /* ViewController.m */,
+				4025CB581CEA3D2B008392B3 /* ViewController2.h */,
+				4025CB591CEA3D2B008392B3 /* ViewController2.m */,
 				4025CB281CEA2CC7008392B3 /* Main.storyboard */,
 				4025CB2B1CEA2CC8008392B3 /* Assets.xcassets */,
 				4025CB521CEA317C008392B3 /* puppy3.jpg */,
@@ -284,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4025CB271CEA2CC7008392B3 /* ViewController.m in Sources */,
+				4025CB5A1CEA3D2B008392B3 /* ViewController2.m in Sources */,
 				4025CB241CEA2CC7008392B3 /* AppDelegate.m in Sources */,
 				4025CB211CEA2CC7008392B3 /* main.m in Sources */,
 			);
