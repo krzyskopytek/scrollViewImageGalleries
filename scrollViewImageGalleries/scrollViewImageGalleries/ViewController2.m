@@ -34,7 +34,7 @@
     
     self.myImageContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.scrollView.frame),  CGRectGetHeight(self.scrollView.frame))];
     
-    UIImageView *justOneImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"puppy1.jpg"]];
+    UIImageView *justOneImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.imageName]];
     justOneImage.frame = CGRectMake(0, 0, CGRectGetWidth(self.scrollView.frame), CGRectGetHeight(self.scrollView.frame));
     justOneImage.contentMode = UIViewContentModeScaleAspectFit;
     

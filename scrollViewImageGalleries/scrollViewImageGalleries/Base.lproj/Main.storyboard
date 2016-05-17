@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="idf-FU-w4V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vk7-u2-eEO">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -16,11 +16,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="SXt-WP-bqG">
+                                <rect key="frame" x="281" y="553" width="39" height="37"/>
+                                <connections>
+                                    <action selector="changePage:" destination="BYZ-38-t0r" eventType="valueChanged" id="Pkp-Yw-iPb"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SXt-WP-bqG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QXg-LA-FAC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SXt-WP-bqG" secondAttribute="bottom" constant="10" id="TXP-g7-HUU"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6y6-g7-gjC"/>
+                    <connections>
+                        <outlet property="pageController" destination="SXt-WP-bqG" id="Snm-zQ-VMt"/>
+                        <segue destination="idf-FU-w4V" kind="show" identifier="detale" id="fzc-vH-jF3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1185" y="324"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="klS-hu-UzF">
@@ -38,7 +56,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YeU-dU-35T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1008" y="324"/>
+            <point key="canvasLocation" x="1820" y="324"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ikC-Dj-8nz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vk7-u2-eEO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Il-tu-hJv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Awe-C5-FwI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q24-y9-x5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="984"/>
         </scene>
     </scenes>
 </document>
